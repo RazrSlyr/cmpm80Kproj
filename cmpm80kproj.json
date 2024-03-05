@@ -198,6 +198,33 @@
         "name": "NewSprite6",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Black.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/SafePlanet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/SafePlanet.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BadPlanet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/BadPlanet.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -329,6 +356,17 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            },
+            {
               "name": "Sticker",
               "type": "Sticker::Sticker",
               "OnlyFollowPosition": true,
@@ -341,7 +379,7 @@
           ],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "Spaceship",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -351,7 +389,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite4",
+                      "image": "assets/Spaceship.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -395,7 +433,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "Space",
-          "texture": "NewTiledSprite2",
+          "texture": "assets/Black.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 128,
           "variables": [],
@@ -441,7 +479,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite5",
+                      "image": "assets/BadPlanet.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -457,20 +495,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 29.5,
-                            "y": 41
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 93.5,
-                            "y": 41
+                            "x": 85,
+                            "y": 38.5
                           },
                           {
-                            "x": 93.5,
-                            "y": 79
+                            "x": 85,
+                            "y": 71
                           },
                           {
-                            "x": 29.5,
-                            "y": 79
+                            "x": 38.5,
+                            "y": 71
                           }
                         ]
                       ]
@@ -482,7 +520,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Safe",
           "type": "Sprite",
@@ -520,7 +558,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite6",
+                      "image": "assets/SafePlanet.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -536,20 +574,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 5
+                            "x": 30.5,
+                            "y": 36
                           },
                           {
-                            "x": 128,
-                            "y": 5
+                            "x": 95.5,
+                            "y": 36
                           },
                           {
-                            "x": 128,
-                            "y": 123
+                            "x": 95.5,
+                            "y": 79.5
                           },
                           {
-                            "x": 0,
-                            "y": 123
+                            "x": 30.5,
+                            "y": 79.5
                           }
                         ]
                       ]
