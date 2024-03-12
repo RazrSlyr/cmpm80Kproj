@@ -1777,6 +1777,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1502,
+          "layer": "",
+          "name": "Space",
+          "persistentUuid": "1fd986b4-ed69-46bc-908d-ac2cfed2102c",
+          "width": 2898,
+          "x": -442,
+          "y": -202,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
