@@ -258,7 +258,7 @@
         "alwaysLoaded": false,
         "file": "assets/NewSprite8.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite8.png\"}",
         "name": "NewSprite8",
         "smoothed": true,
         "userAdded": true
@@ -330,8 +330,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Untitled_32scene",
-      "name": "Untitled scene",
+      "mangledName": "Main",
+      "name": "Main",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -347,10 +347,22 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3591904211035452,
+        "zoomFactor": 0.30204193749944336,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Danger",
+          "objects": [
+            {
+              "name": "Obstacle"
+            },
+            {
+              "name": "Asteroid"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -377,7 +389,7 @@
           "persistentUuid": "c40ea03e-426b-40ed-af80-402d1f4f0753",
           "width": 0,
           "x": 237,
-          "y": 1,
+          "y": 25,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -392,7 +404,7 @@
           "persistentUuid": "42d23d96-38a1-45ca-bb9c-b3b869c23ed3",
           "width": 0,
           "x": 699,
-          "y": 4,
+          "y": 25,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -407,7 +419,7 @@
           "persistentUuid": "609304cd-b57d-404d-b238-78b3c571e49e",
           "width": 0,
           "x": 1134,
-          "y": 4,
+          "y": 25,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -422,7 +434,7 @@
           "persistentUuid": "71989153-b080-49d3-a216-73ecf763658e",
           "width": 0,
           "x": 1552,
-          "y": -1,
+          "y": 25,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -437,7 +449,7 @@
           "persistentUuid": "ec157fbe-5033-40c2-891c-d2fa7d6b18ad",
           "width": 0,
           "x": 1763,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -452,7 +464,7 @@
           "persistentUuid": "3e973913-1bc6-4a55-b8a3-98032dcbde4c",
           "width": 0,
           "x": 1600,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -467,7 +479,7 @@
           "persistentUuid": "e1ec9e1f-a245-4291-b62b-c2404def02b8",
           "width": 0,
           "x": 1458,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -482,7 +494,7 @@
           "persistentUuid": "ec7b50d5-5faf-4ffa-bbd6-11cde3d13d0c",
           "width": 0,
           "x": 1002,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -497,7 +509,7 @@
           "persistentUuid": "e7021cdc-cb00-46f5-a742-a01618b63554",
           "width": 0,
           "x": 1144,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -512,7 +524,7 @@
           "persistentUuid": "fd7995f9-04e7-4869-b6ec-31a516406d36",
           "width": 0,
           "x": 1307,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -527,7 +539,7 @@
           "persistentUuid": "e76e25a8-d574-4fc9-806c-3eca84cafee5",
           "width": 0,
           "x": 864,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -542,7 +554,7 @@
           "persistentUuid": "27465686-5b12-418d-ac79-ff62b477ffc3",
           "width": 0,
           "x": 1657,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -557,7 +569,7 @@
           "persistentUuid": "2623c703-4529-4c67-9f54-1d5e6daf93c0",
           "width": 0,
           "x": 1494,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -572,7 +584,7 @@
           "persistentUuid": "d0e010b9-d7bc-4bfb-9a22-31592dd613bd",
           "width": 0,
           "x": 1352,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -587,7 +599,7 @@
           "persistentUuid": "0f216a63-ca25-49fb-bd89-88f31842b469",
           "width": 0,
           "x": 1201,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -602,7 +614,7 @@
           "persistentUuid": "3f2ecae0-0a52-4a19-8651-00865c1e7337",
           "width": 0,
           "x": 1038,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -617,7 +629,7 @@
           "persistentUuid": "90b0c6b2-2143-4680-a548-eb29951fb45c",
           "width": 0,
           "x": 896,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -632,7 +644,7 @@
           "persistentUuid": "dac24faf-cd70-4a72-878f-2373b6160104",
           "width": 0,
           "x": 843,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -647,7 +659,7 @@
           "persistentUuid": "2aa125e5-61f2-4cfd-9690-5e68add9f4f3",
           "width": 0,
           "x": 680,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -662,7 +674,7 @@
           "persistentUuid": "908c1e9b-d61b-43f6-a5af-25d54c4931e8",
           "width": 0,
           "x": 538,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -677,7 +689,7 @@
           "persistentUuid": "51ffa97d-ab49-42f6-8f56-dc59d9b3c583",
           "width": 0,
           "x": 82,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -692,7 +704,7 @@
           "persistentUuid": "9d3a2927-aff8-48d9-a92b-0b95ae0c4d1a",
           "width": 0,
           "x": 224,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -707,7 +719,7 @@
           "persistentUuid": "0de5c1dd-8d1b-459f-a424-c9ae92eaf374",
           "width": 0,
           "x": 387,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -722,7 +734,7 @@
           "persistentUuid": "d0019e9d-1180-4278-9739-b503cf393566",
           "width": 0,
           "x": -56,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -737,7 +749,7 @@
           "persistentUuid": "d6b1608a-9241-4a69-a081-9882b90dff1e",
           "width": 0,
           "x": 737,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -752,7 +764,7 @@
           "persistentUuid": "27f1753a-0ced-4b08-9ca8-bb6c3d991441",
           "width": 0,
           "x": 574,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -767,7 +779,7 @@
           "persistentUuid": "a8031188-d44b-48ff-b277-34ea3a1efc1b",
           "width": 0,
           "x": 432,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -782,7 +794,7 @@
           "persistentUuid": "8454e95f-e4e0-4ccb-af23-1b8fdf1d3639",
           "width": 0,
           "x": 281,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -797,7 +809,7 @@
           "persistentUuid": "3fa71db5-e669-4eb0-a6c6-8e30a3383456",
           "width": 0,
           "x": 118,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -812,7 +824,7 @@
           "persistentUuid": "880c269e-1627-41c0-89fa-f9e02ecc41ed",
           "width": 0,
           "x": -24,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -827,7 +839,7 @@
           "persistentUuid": "3218d992-d6c8-446e-8210-1b909840e453",
           "width": 0,
           "x": 1772,
-          "y": 435,
+          "y": 537,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -842,7 +854,7 @@
           "persistentUuid": "c41d53a9-4ac2-4c9a-b916-b8c297e99084",
           "width": 0,
           "x": 1231,
-          "y": 435,
+          "y": 537,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -857,7 +869,7 @@
           "persistentUuid": "6b479388-1480-4d5e-9b34-1b2f61cd043f",
           "width": 0,
           "x": 650,
-          "y": 435,
+          "y": 537,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -872,7 +884,7 @@
           "persistentUuid": "85417fd7-a488-48c4-9cf0-c9550e68ee85",
           "width": 0,
           "x": 35,
-          "y": 435,
+          "y": 537,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -887,7 +899,7 @@
           "persistentUuid": "de5fb78e-cc6d-4da9-a935-39e19ff8005d",
           "width": 0,
           "x": 1822,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -902,7 +914,7 @@
           "persistentUuid": "b437a8cc-208b-4478-aea7-53943b655488",
           "width": 0,
           "x": 1870,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -917,7 +929,7 @@
           "persistentUuid": "e941109d-8814-40ec-b23d-397faa1b2023",
           "width": 0,
           "x": 1925,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -932,7 +944,7 @@
           "persistentUuid": "e56ef881-420d-487f-905d-d1ffcbb2a985",
           "width": 0,
           "x": 1984,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -947,7 +959,7 @@
           "persistentUuid": "5b758dd7-8156-4d7b-b1de-0b7e03ed03ce",
           "width": 0,
           "x": 2032,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -962,7 +974,7 @@
           "persistentUuid": "b8e5cab6-927e-408e-8265-ea0728990bb5",
           "width": 0,
           "x": 2072,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -977,7 +989,7 @@
           "persistentUuid": "849c2cf5-5a04-4f9d-85c0-f7c3e52f8e70",
           "width": 0,
           "x": 2131,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -992,7 +1004,7 @@
           "persistentUuid": "5c996b8b-edfc-4129-9c5e-57417234a6ea",
           "width": 0,
           "x": 2179,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1007,7 +1019,7 @@
           "persistentUuid": "bb7f9a5f-bf44-47df-9bc4-e923df05d5f8",
           "width": 0,
           "x": 2234,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1022,7 +1034,7 @@
           "persistentUuid": "57ecd7e4-b491-4e87-b103-a42b14f192ed",
           "width": 0,
           "x": 2293,
-          "y": 435,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1037,7 +1049,7 @@
           "persistentUuid": "497949a0-f8c1-478d-897a-5b590c591684",
           "width": 0,
           "x": 2341,
-          "y": 442,
+          "y": 537,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1052,7 +1064,7 @@
           "persistentUuid": "1dde948b-bd16-46b7-8aa1-642f2419e8f1",
           "width": 0,
           "x": 1551,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1074,7 +1086,7 @@
           "persistentUuid": "50403219-4302-4813-9ba5-0eb38a7badfc",
           "width": 0,
           "x": 1388,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1089,7 +1101,7 @@
           "persistentUuid": "6ee5cdc1-f926-4af1-973b-ae09d66fcfc6",
           "width": 0,
           "x": 1246,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1104,7 +1116,7 @@
           "persistentUuid": "e37f0c77-8e29-4e9d-8c98-e685347edc2d",
           "width": 0,
           "x": 790,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1119,7 +1131,7 @@
           "persistentUuid": "d2f8369d-026f-468b-a450-0f8ec80d1cdf",
           "width": 0,
           "x": 932,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1134,7 +1146,7 @@
           "persistentUuid": "e5594523-27e7-4157-88b6-6b785e7205e7",
           "width": 0,
           "x": 1095,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1149,7 +1161,7 @@
           "persistentUuid": "bf510c47-8778-464e-a08b-43a0948e2768",
           "width": 0,
           "x": 652,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1164,7 +1176,7 @@
           "persistentUuid": "e4a01b10-ed8b-437b-82a7-0c350f7af211",
           "width": 0,
           "x": 1445,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1179,7 +1191,7 @@
           "persistentUuid": "b3da6a81-ac33-4583-9019-bc12112f2b0d",
           "width": 0,
           "x": 1282,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1194,7 +1206,7 @@
           "persistentUuid": "22acee08-b569-4263-b3c3-f224dd69a9a8",
           "width": 0,
           "x": 1140,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1209,7 +1221,7 @@
           "persistentUuid": "8cdad754-f916-414f-ae67-a8b8350be281",
           "width": 0,
           "x": 989,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1224,7 +1236,7 @@
           "persistentUuid": "9fb15140-e9d8-4270-a40a-543bad25c8bf",
           "width": 0,
           "x": 826,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1239,7 +1251,7 @@
           "persistentUuid": "616332ce-2510-44ad-9a95-21e30fe953ba",
           "width": 0,
           "x": 684,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1254,7 +1266,7 @@
           "persistentUuid": "078213cb-7ed8-4083-9fb5-5df947dc6fc4",
           "width": 0,
           "x": 631,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1269,7 +1281,7 @@
           "persistentUuid": "4774070b-15b2-40c8-9acc-bf0f231604d5",
           "width": 0,
           "x": 468,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1284,7 +1296,7 @@
           "persistentUuid": "19ee8ea2-426e-4e5d-be47-0028728b4609",
           "width": 0,
           "x": 326,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1299,7 +1311,7 @@
           "persistentUuid": "3fd5a26b-41fc-4eec-8c25-185fc0cdecd7",
           "width": 0,
           "x": -130,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1314,7 +1326,7 @@
           "persistentUuid": "9f8b97b5-84de-47cc-a42a-259d5c5e08a6",
           "width": 0,
           "x": 12,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1329,7 +1341,7 @@
           "persistentUuid": "9a924f3e-d191-46f8-abbd-90b04917b3b9",
           "width": 0,
           "x": 175,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1344,7 +1356,7 @@
           "persistentUuid": "bfdab3d3-3cb9-4d40-a7d4-cd2a8f1b6888",
           "width": 0,
           "x": -268,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1366,7 +1378,7 @@
           "persistentUuid": "bef1342a-8cfa-462d-9212-99ce307b6dc2",
           "width": 0,
           "x": 525,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1381,7 +1393,7 @@
           "persistentUuid": "3645ed25-1062-4493-985e-326ddc9d1a67",
           "width": 0,
           "x": 362,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1396,7 +1408,7 @@
           "persistentUuid": "51d1e3b6-3ea5-4c42-9b10-dc405387a648",
           "width": 0,
           "x": 220,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1411,7 +1423,7 @@
           "persistentUuid": "e6f7e331-8e92-43cc-b613-4d87064a96ce",
           "width": 0,
           "x": 69,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1426,7 +1438,7 @@
           "persistentUuid": "c0200cf4-3739-41bc-807d-5935c1286461",
           "width": 0,
           "x": -94,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1441,7 +1453,7 @@
           "persistentUuid": "cc4e367d-a1f0-426d-b096-f015205fe568",
           "width": 0,
           "x": -236,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1456,7 +1468,7 @@
           "persistentUuid": "595f08c0-98e8-473a-a00f-fd99627e58b6",
           "width": 0,
           "x": 1560,
-          "y": 184,
+          "y": 281,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -1471,7 +1483,7 @@
           "persistentUuid": "938785e3-7b75-4143-86a7-a7a89df18eeb",
           "width": 0,
           "x": 1019,
-          "y": 184,
+          "y": 281,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -1486,7 +1498,7 @@
           "persistentUuid": "d393f642-adaa-426a-be5a-9fd710345b6e",
           "width": 0,
           "x": 438,
-          "y": 184,
+          "y": 281,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -1501,7 +1513,7 @@
           "persistentUuid": "3f189f5d-bf3b-4d10-bfef-1fdc4a59305f",
           "width": 0,
           "x": -177,
-          "y": 184,
+          "y": 281,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -1516,7 +1528,7 @@
           "persistentUuid": "7297462c-5b76-4b66-8a32-6854616f6f93",
           "width": 0,
           "x": 1610,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1531,7 +1543,7 @@
           "persistentUuid": "1b921df8-bb68-46ca-bd62-c9de6a21da09",
           "width": 0,
           "x": 1658,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1546,7 +1558,7 @@
           "persistentUuid": "cbc57d92-9cd9-48f9-acb8-64053561bf9a",
           "width": 0,
           "x": 1713,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1561,7 +1573,7 @@
           "persistentUuid": "aa0ec742-118c-49eb-8162-929225e9fdbe",
           "width": 0,
           "x": 1772,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1576,7 +1588,7 @@
           "persistentUuid": "497bf709-8d47-4223-8b80-dd48955f2c58",
           "width": 0,
           "x": 1820,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1591,7 +1603,7 @@
           "persistentUuid": "b63e9c88-f363-4feb-8f66-e736ff089369",
           "width": 0,
           "x": 1860,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1606,7 +1618,7 @@
           "persistentUuid": "91e32ce7-acb7-4cde-82f8-29f94c9cda4b",
           "width": 0,
           "x": 1919,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1621,7 +1633,7 @@
           "persistentUuid": "2f3b81da-bbe9-4ccd-a5ec-a5b2d8660c51",
           "width": 0,
           "x": 1967,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1636,7 +1648,7 @@
           "persistentUuid": "f0cdf97d-9540-465c-a1c1-b453668a27d4",
           "width": 0,
           "x": 2022,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1651,7 +1663,7 @@
           "persistentUuid": "27e9f662-6fbd-49c9-96d9-8cb333773f59",
           "width": 0,
           "x": 2081,
-          "y": 184,
+          "y": 281,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1681,7 +1693,7 @@
           "persistentUuid": "8f4ca67c-3669-4acd-b135-ab4eff478cd3",
           "width": 0,
           "x": 1648,
-          "y": 304,
+          "y": 409,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -1696,7 +1708,7 @@
           "persistentUuid": "5f8a45e6-c559-4d7f-8231-418ebc97a366",
           "width": 0,
           "x": 197,
-          "y": 304,
+          "y": 409,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -1711,7 +1723,7 @@
           "persistentUuid": "a176df90-6fef-41a3-b855-463599428a0f",
           "width": 0,
           "x": 923,
-          "y": 304,
+          "y": 409,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -1766,13 +1778,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 1558,
+          "height": 1350,
           "layer": "",
           "name": "Space",
-          "persistentUuid": "cf2ffb26-4ba6-4b45-b9d5-64a70712acee",
-          "width": 2614,
-          "x": -188,
-          "y": -152,
+          "persistentUuid": "e886570a-a4da-4e5c-9ffe-da3a65b1a125",
+          "width": 2681,
+          "x": -94,
+          "y": -81,
           "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
@@ -2132,17 +2144,6 @@
           ]
         },
         {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "NewTiledSprite",
-          "texture": "",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Dock",
@@ -2353,22 +2354,19 @@
             "objectName": "Safe"
           },
           {
-            "objectName": "Asteroid"
-          },
-          {
             "objectName": "Space"
           },
           {
             "objectName": "DockedShip"
           },
           {
-            "objectName": "NewTiledSprite"
-          },
-          {
             "objectName": "Dock"
           },
           {
             "objectName": "Obstacle"
+          },
+          {
+            "objectName": "Asteroid"
           }
         ]
       },
@@ -2400,65 +2398,45 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Spaceship",
-                        "Obstacle",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Spaceship",
-                            "Safe",
-                            "",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Spaceship",
-                            "Asteroid",
-                            "",
-                            "",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "Spaceship",
                     "Dying",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Spaceship",
+                        "Safe",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Spaceship",
+                        "Danger",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2685,12 +2663,18 @@
                 },
                 {
                   "type": {
-                    "value": "KeyReleased"
+                    "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
                     "d"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ]
             }
@@ -2747,12 +2731,18 @@
                 },
                 {
                   "type": {
-                    "value": "KeyReleased"
+                    "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
                     "a"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ]
             }
@@ -2809,12 +2799,18 @@
                 },
                 {
                   "type": {
-                    "value": "KeyReleased"
+                    "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
                     "w"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ]
             }
@@ -2871,12 +2867,18 @@
                 },
                 {
                   "type": {
-                    "value": "KeyReleased"
+                    "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
                     "s"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ]
             }
@@ -3067,11 +3069,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "layers": [
