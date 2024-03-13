@@ -362,6 +362,9 @@
             },
             {
               "name": "ReverseAsteroid"
+            },
+            {
+              "name": "ReverseObstacle"
             }
           ]
         },
@@ -621,54 +624,6 @@
           "width": 104,
           "x": 1648,
           "y": 841,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 104,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "8f4ca67c-3669-4acd-b135-ab4eff478cd3",
-          "width": 104,
-          "x": 1427,
-          "y": 529,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 104,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "5f8a45e6-c559-4d7f-8231-418ebc97a366",
-          "width": 104,
-          "x": 246,
-          "y": 529,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 104,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "a176df90-6fef-41a3-b855-463599428a0f",
-          "width": 104,
-          "x": 837,
-          "y": 529,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -2401,6 +2356,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "d89c6f15-753e-485f-9f21-b139635eba60",
+          "width": 107,
+          "x": 1427,
+          "y": 529,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "690bb95b-ec29-45bc-b1f4-ad27919e75cc",
+          "width": 107,
+          "x": 837,
+          "y": 529,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "366f2c28-e79f-46bc-ac75-543d2b8e32ff",
+          "width": 107,
+          "x": 246,
+          "y": 529,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3123,6 +3126,85 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "ReverseObstacle",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": -512,
+              "SpeedY": 0
+            },
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Obstacle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/BadPlanet.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 85,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 85,
+                            "y": 71
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 71
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -3148,6 +3230,9 @@
           },
           {
             "objectName": "Obstacle"
+          },
+          {
+            "objectName": "ReverseObstacle"
           },
           {
             "objectName": "Asteroid"
