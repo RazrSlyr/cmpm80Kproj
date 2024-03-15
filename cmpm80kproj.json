@@ -807,7 +807,7 @@
         {
           "name": "NextLevel",
           "type": "string",
-          "value": "Finish"
+          "value": "Level 2"
         }
       ],
       "instances": [
@@ -2807,6 +2807,3797 @@
           "x": 246,
           "y": 529,
           "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Spaceship",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Dying",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": false,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            },
+            {
+              "name": "StayOnScreen",
+              "type": "StayOnScreen::StayOnScreen",
+              "MarginTop": 0,
+              "MarginBottom": 0,
+              "MarginLeft": 0,
+              "MarginRight": 0
+            },
+            {
+              "name": "Sticker",
+              "type": "Sticker::Sticker",
+              "OnlyFollowPosition": true,
+              "IsDestroyedWithParent": false
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Spaceship",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Spaceship.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 120
+                          },
+                          {
+                            "x": 0,
+                            "y": 120
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Dying",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.125,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Dying5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 120
+                          },
+                          {
+                            "x": 0,
+                            "y": 120
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Dying6",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 120
+                          },
+                          {
+                            "x": 0,
+                            "y": 120
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Space",
+          "texture": "assets/Black.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 128,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Obstacle",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": 512,
+              "SpeedY": 0
+            },
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Obstacle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/BadPlanet.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 85,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 85,
+                            "y": 71
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 71
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Safe",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": -512,
+              "SpeedY": 0
+            },
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Earth",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Earth",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 28,
+                            "y": 33.5
+                          },
+                          {
+                            "x": 103,
+                            "y": 34
+                          },
+                          {
+                            "x": 104,
+                            "y": 105
+                          },
+                          {
+                            "x": 28.5,
+                            "y": 103
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Dock",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite7",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 30,
+                            "y": 34
+                          },
+                          {
+                            "x": 107,
+                            "y": 34
+                          },
+                          {
+                            "x": 107,
+                            "y": 77.5
+                          },
+                          {
+                            "x": 30,
+                            "y": 77.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "DockedShip",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Spaceship.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 5
+                          },
+                          {
+                            "x": 128,
+                            "y": 120
+                          },
+                          {
+                            "x": 0,
+                            "y": 120
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Asteroid",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": -512,
+              "SpeedY": 0
+            },
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite8",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 39.5
+                          },
+                          {
+                            "x": 75.5,
+                            "y": 35.5
+                          },
+                          {
+                            "x": 67.5,
+                            "y": 64.5
+                          },
+                          {
+                            "x": 37.5,
+                            "y": 70.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "ReverseAsteroid",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": 512,
+              "SpeedY": 0
+            },
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite8",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 39.5
+                          },
+                          {
+                            "x": 75.5,
+                            "y": 35.5
+                          },
+                          {
+                            "x": 67.5,
+                            "y": 64.5
+                          },
+                          {
+                            "x": 37.5,
+                            "y": 70.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "ReverseSafe",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": 512,
+              "SpeedY": 0
+            },
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Earth",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Earth",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 28,
+                            "y": 33.5
+                          },
+                          {
+                            "x": 103,
+                            "y": 34
+                          },
+                          {
+                            "x": 104,
+                            "y": 105
+                          },
+                          {
+                            "x": 28.5,
+                            "y": 103
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "ReverseObstacle",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": -512,
+              "SpeedY": 0
+            },
+            {
+              "name": "ScreenWrap",
+              "type": "ScreenWrap::ScreenWrap",
+              "HorizontalWrapping": true,
+              "VerticalWrapping": true,
+              "BorderTop": 0,
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderBottom": 0,
+              "TriggerOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Obstacle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/BadPlanet.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 85,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 85,
+                            "y": 71
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 71
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Spaceship"
+          },
+          {
+            "objectName": "Safe"
+          },
+          {
+            "objectName": "ReverseSafe"
+          },
+          {
+            "objectName": "Space"
+          },
+          {
+            "objectName": "DockedShip"
+          },
+          {
+            "objectName": "Dock"
+          },
+          {
+            "objectName": "Obstacle"
+          },
+          {
+            "objectName": "ReverseObstacle"
+          },
+          {
+            "objectName": "Asteroid"
+          },
+          {
+            "objectName": "ReverseAsteroid"
+          },
+          {
+            "objectName": "NewSprite"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Spaceship",
+                "DockedShip",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "DockedShip",
+                "Resizable",
+                "MoveSize",
+                "MoveSize"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "Dying",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Spaceship",
+                        "SafeZones",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Spaceship",
+                        "Danger",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Sticker::Sticker::Unstick"
+              },
+              "parameters": [
+                "Spaceship",
+                "Sticker",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Spaceship",
+                "Animation",
+                "=",
+                "\"Dying\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Move\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "8bitboom.mp3",
+                "0",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Spaceship",
+                "\"Dying\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Spaceship",
+                "Dying",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "Dying",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "SafeZones",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "Spaceship",
+                "Sticker",
+                "SafeZones",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Spaceship",
+                "=",
+                "SafeZones.X()",
+                "=",
+                "SafeZones.Y()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Spaceship",
+                        "Safe",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnyKeyReleased"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "Dying",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Sticker::Sticker::Unstick"
+              },
+              "parameters": [
+                "Spaceship",
+                "Sticker",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "Dying",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Move\"",
+                "Spaceship.X()+Variable(MoveSize)",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Turn\"",
+                "90",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "Dying",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "a"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Move\"",
+                "Spaceship.X()-Variable(MoveSize)",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Turn\"",
+                "-90",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "Dying",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "w"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Move\"",
+                "Spaceship.Y()-Variable(MoveSize)",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Turn\"",
+                "0",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "Dying",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "s"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Move\"",
+                "Spaceship.Y()+Variable(MoveSize)",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Turn\"",
+                "180",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Spaceship",
+                "Dock",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Move\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Turn\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "DockedShip",
+                "Dock.X()",
+                "Dock.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Spaceship",
+                "=",
+                "SpawnPosition[0]",
+                "=",
+                "SpawnPosition[1]"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Spaceship",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "NumDocked",
+                "=",
+                "Variable(NumDocked)+1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Spaceship",
+                "\"Dying\"",
+                ">=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Spaceship",
+                "Dying",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"Turn\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Spaceship",
+                "=",
+                "SpawnPosition[0]",
+                "=",
+                "SpawnPosition[1]"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Spaceship",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveObjectTimer"
+              },
+              "parameters": [
+                "Spaceship",
+                "\"Dying\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Spaceship",
+                "Animation",
+                "=",
+                "\"Spaceship\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NumDocked",
+                "=",
+                "TotalDocks"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "VariableString(NextLevel)",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "ScreenWrap",
+          "type": "ScreenWrap::ScreenWrap"
+        },
+        {
+          "name": "StayOnScreen",
+          "type": "StayOnScreen::StayOnScreen"
+        },
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Level_322",
+      "name": "Level 2",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.30204193749944336,
+        "windowMask": false
+      },
+      "objectsGroups": [
+        {
+          "name": "Danger",
+          "objects": [
+            {
+              "name": "Obstacle"
+            },
+            {
+              "name": "Asteroid"
+            },
+            {
+              "name": "ReverseAsteroid"
+            },
+            {
+              "name": "ReverseObstacle"
+            }
+          ]
+        },
+        {
+          "name": "SafeZones",
+          "objects": [
+            {
+              "name": "Safe"
+            },
+            {
+              "name": "ReverseSafe"
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "folded": true,
+          "name": "MoveSize",
+          "type": "number",
+          "value": 104
+        },
+        {
+          "name": "SpawnPosition",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "number",
+              "value": 895
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 945
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "NumDocked",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "TotalDocks",
+          "type": "string",
+          "value": "4"
+        },
+        {
+          "name": "NextLevel",
+          "type": "string",
+          "value": "Level 2"
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Spaceship",
+          "persistentUuid": "ed8f26a1-4854-4f0e-8d44-05e9ba879501",
+          "width": 104,
+          "x": 895,
+          "y": 945,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Dock",
+          "persistentUuid": "c40ea03e-426b-40ed-af80-402d1f4f0753",
+          "width": 104,
+          "x": 362,
+          "y": 112,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Dock",
+          "persistentUuid": "42d23d96-38a1-45ca-bb9c-b3b869c23ed3",
+          "width": 104,
+          "x": 738,
+          "y": 112,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Dock",
+          "persistentUuid": "609304cd-b57d-404d-b238-78b3c571e49e",
+          "width": 104,
+          "x": 1092,
+          "y": 112,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Dock",
+          "persistentUuid": "71989153-b080-49d3-a216-73ecf763658e",
+          "width": 104,
+          "x": 1432,
+          "y": 112,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "3218d992-d6c8-446e-8210-1b909840e453",
+          "width": 104,
+          "x": 1499,
+          "y": 538,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "c41d53a9-4ac2-4c9a-b916-b8c297e99084",
+          "width": 104,
+          "x": 1059,
+          "y": 538,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "6b479388-1480-4d5e-9b34-1b2f61cd043f",
+          "width": 104,
+          "x": 586,
+          "y": 538,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "85417fd7-a488-48c4-9cf0-c9550e68ee85",
+          "width": 104,
+          "x": 86,
+          "y": 538,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "595f08c0-98e8-473a-a00f-fd99627e58b6",
+          "width": 104,
+          "x": 1355,
+          "y": 425,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "938785e3-7b75-4143-86a7-a7a89df18eeb",
+          "width": 104,
+          "x": 915,
+          "y": 425,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "d393f642-adaa-426a-be5a-9fd710345b6e",
+          "width": 104,
+          "x": 442,
+          "y": 425,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Safe",
+          "persistentUuid": "3f189f5d-bf3b-4d10-bfef-1fdc4a59305f",
+          "width": 104,
+          "x": -58,
+          "y": 425,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Obstacle",
+          "persistentUuid": "623b7197-082b-4844-9e4d-55593ae06f89",
+          "width": 104,
+          "x": 1648,
+          "y": 788,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Obstacle",
+          "persistentUuid": "568f0cab-24bd-4500-9c29-f810a8069308",
+          "width": 104,
+          "x": 742,
+          "y": 769,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Obstacle",
+          "persistentUuid": "df3f97b8-c923-4ee4-9121-c28969519e0c",
+          "width": 104,
+          "x": 320,
+          "y": 841,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 104,
+          "layer": "",
+          "name": "Obstacle",
+          "persistentUuid": "51775809-8bf8-4c73-ae53-364f94380980",
+          "width": 104,
+          "x": 1211,
+          "y": 788,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "635b6ee2-edf6-4b99-bd70-7337bfb4cb85",
+          "width": 104,
+          "x": 1765,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "b7815824-0c6f-4710-b23f-2da3767f67b1",
+          "width": 104,
+          "x": 1699,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "a77e1308-10bf-4028-b5a8-510a851a53ef",
+          "width": 104,
+          "x": 1629,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "5906e3a4-952b-42b3-81ea-3f2953524d3a",
+          "width": 104,
+          "x": 1569,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "d7be41f7-d338-4295-901a-1d392baa0177",
+          "width": 104,
+          "x": 1503,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "2f721007-d027-41f7-a015-27b9220db677",
+          "width": 104,
+          "x": 1423,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "f0a51f65-e038-46e6-8492-aed22b4ac6f8",
+          "width": 104,
+          "x": 1354,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "a6b62412-f999-46c9-95ba-cbe3538d932f",
+          "width": 104,
+          "x": 1294,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "6ce69974-e99b-4a35-aaf2-60ad0fa1486e",
+          "width": 104,
+          "x": 1228,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "2a834390-f233-4c7e-9f39-6d6ff2c18142",
+          "width": 104,
+          "x": 1158,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "e63bc8f8-66b4-4185-b205-4e77e69f204c",
+          "width": 104,
+          "x": 1098,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "26d4516e-10c4-449b-b5e7-3ded7c711b5d",
+          "width": 104,
+          "x": 1032,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "e5d19ad6-6c4f-4f60-86ea-056ad2899bec",
+          "width": 104,
+          "x": 952,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "3cd61aa8-c7d2-4bb5-9704-66983d034167",
+          "width": 104,
+          "x": 883,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "6836e6fb-1877-46e5-97c5-7b085ce2892c",
+          "width": 104,
+          "x": 802,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "3ffd76c2-9d6c-414c-9cc7-1755dcdff6b6",
+          "width": 104,
+          "x": 736,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "9e04d621-24fe-4a21-a383-a3b1ec279578",
+          "width": 104,
+          "x": 666,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "fdfd8033-3685-4842-9c77-c9d9f2903b13",
+          "width": 104,
+          "x": 606,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "4ea3ca8a-7417-48d3-b6f8-5c33c276c22c",
+          "width": 104,
+          "x": 540,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "5c5141e1-d166-45bf-88c1-4f19079f07ba",
+          "width": 104,
+          "x": 460,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "48b68f0c-1857-42c9-9e18-ea82cc7d6cef",
+          "width": 104,
+          "x": 391,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "c16e891b-7d31-4bd3-ba43-b309e8afa57f",
+          "width": 104,
+          "x": 299,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "a6bdd089-d62c-4cd4-8a43-b2b159e6ed29",
+          "width": 104,
+          "x": 233,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "9201a8a6-8031-4943-b608-79771ce06cc0",
+          "width": 104,
+          "x": 163,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "0264d0fb-7264-4897-b120-7fcf748ea1c3",
+          "width": 104,
+          "x": 103,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "07be7479-26a4-4d11-aee7-0a04d0bdf8ff",
+          "width": 104,
+          "x": 37,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "b5955439-f282-4780-9b3b-bf8d62391f47",
+          "width": 104,
+          "x": -43,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseAsteroid",
+          "persistentUuid": "cd7f8b25-9b2f-414f-bbf2-728cedef4554",
+          "width": 104,
+          "x": -112,
+          "y": 321,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseSafe",
+          "persistentUuid": "f493f121-613d-40e0-b664-95449713b648",
+          "width": 104,
+          "x": 676,
+          "y": 321,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseSafe",
+          "persistentUuid": "f2904289-ee28-4d5e-b811-461ee58367f6",
+          "width": 104,
+          "x": 1143,
+          "y": 321,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseSafe",
+          "persistentUuid": "49beda58-a071-4ffd-a638-02b78ed73e88",
+          "width": 104,
+          "x": 1606,
+          "y": 321,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "ReverseSafe",
+          "persistentUuid": "6e6f974b-f6d5-4e30-881e-e04536c83572",
+          "width": 104,
+          "x": 218,
+          "y": 321,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "01fca8e7-bbb1-4b69-8855-de558dc1db66",
+          "width": 104,
+          "x": 1745,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "857572d8-78c7-4071-bbf6-e3230e0e93dc",
+          "width": 104,
+          "x": 1634,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "e52887d0-dec7-4ec1-80cb-052ee5ea3b5b",
+          "width": 104,
+          "x": 1518,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "4db80db3-b7cf-426a-9e57-61835dfd7b8f",
+          "width": 104,
+          "x": 1402,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "814fedef-738d-4332-a780-d01c117cf600",
+          "width": 104,
+          "x": 1296,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "67f9477c-d308-4908-b800-0c94b904cc82",
+          "width": 104,
+          "x": 1196,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "93ce4942-76f0-4565-a0e3-cc64fb351886",
+          "width": 104,
+          "x": 1081,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "e3b45d00-d575-498c-af2b-db80eabffefc",
+          "width": 104,
+          "x": 965,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "535ff0f7-4e50-4c06-91a8-b4b26d84960f",
+          "width": 104,
+          "x": 862,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "0b9f1ae4-d100-4619-ac1e-f7c56fe017f9",
+          "width": 104,
+          "x": 757,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "23726f52-7194-477a-9027-a1178f3014f3",
+          "width": 104,
+          "x": 654,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "c4b990f2-5a97-42fe-b5ae-a8190bc38b63",
+          "width": 104,
+          "x": 535,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "ac09c42d-d962-41fe-9830-a1243a637c40",
+          "width": 104,
+          "x": 432,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "aadb48c0-ec43-4945-9d13-8d8884eeaa16",
+          "width": 104,
+          "x": 320,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "5c76c687-e003-4526-bed1-dc692c171193",
+          "width": 104,
+          "x": 214,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "af6e0d37-d15a-4b20-8758-81ee9125fd56",
+          "width": 104,
+          "x": 104,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "225f33bd-6849-4f5d-a69b-79cd19d67d05",
+          "width": 104,
+          "x": -4,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "e72d543b-a1d6-46a3-a981-245418fc8be1",
+          "width": 104,
+          "x": -104,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "3b05c778-901d-4ef5-8155-191764fe13dd",
+          "width": 104,
+          "x": 1801,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "b7b9da2e-622b-49f3-8ed4-27a622b914d7",
+          "width": 104,
+          "x": 1690,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "3f625037-d0f3-4acd-a4ec-60ef628df970",
+          "width": 104,
+          "x": 1574,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "c66d5e08-3a6d-4e5b-86d4-af2e2e5c747e",
+          "width": 104,
+          "x": 1458,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "4280a728-4ee4-4574-b2e2-ca7ca0222db0",
+          "width": 104,
+          "x": 1352,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "7cf7433c-b9c9-409d-8620-fa02ee5a8467",
+          "width": 104,
+          "x": 1252,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "2d60c9c8-5ebe-41e6-a21a-0d93d5828a92",
+          "width": 104,
+          "x": 1137,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "70e21acc-211d-4c3e-b24e-9530a4a4194b",
+          "width": 104,
+          "x": 1021,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "c03c4cb6-b5dd-43db-a2f0-6a2e868688d6",
+          "width": 104,
+          "x": 918,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "89026b46-1b01-4d51-ad84-302969878dd1",
+          "width": 104,
+          "x": 813,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "c68db288-6e60-4fea-ae42-686a6cd4c4d2",
+          "width": 104,
+          "x": 710,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "d10567d4-275d-471b-89fd-22e15c78ac11",
+          "width": 104,
+          "x": 591,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "b7d89aae-a603-4c60-a107-40ca537cd55f",
+          "width": 104,
+          "x": 488,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "3fbd5972-33ae-4546-bd8d-331be4c77d8b",
+          "width": 104,
+          "x": 376,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "c70453b4-1930-4f7a-9610-8ede141fbdb6",
+          "width": 104,
+          "x": 270,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "d3f4b126-2e5a-4e67-bc70-b9e7a7ea903a",
+          "width": 104,
+          "x": 160,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "91ac80d0-1a9a-407c-beef-b4bd44a1fb80",
+          "width": 104,
+          "x": 52,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "607123d9-22c1-4408-9aec-4fa44f1d5094",
+          "width": 104,
+          "x": -48,
+          "y": 425,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "4ed78db3-b05e-4051-8880-8d919c93ee82",
+          "width": 104,
+          "x": 1710,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "7e72bdb0-be9c-4c1e-8609-77200a1183ac",
+          "width": 104,
+          "x": 1599,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "a710c897-5ef3-46d8-afd4-c095e0ce2bd7",
+          "width": 104,
+          "x": 1483,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "007c5dc6-d1c2-45a2-a1bf-b84a77c86984",
+          "width": 104,
+          "x": 1367,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "1bdfde99-0e8e-4e2c-ab07-1fa3d48ef504",
+          "width": 104,
+          "x": 1261,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "4642f9ea-e825-4f1e-bc79-f5e3190df467",
+          "width": 104,
+          "x": 1161,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "dd84ca4e-3f40-4f3d-ac21-614d1793dbea",
+          "width": 104,
+          "x": 1046,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "485edb98-6490-4729-8deb-8b49fc008edc",
+          "width": 104,
+          "x": 930,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "8d59e831-99a4-4c68-b304-4e85d72d367d",
+          "width": 104,
+          "x": 827,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "d5c935ba-4ffd-4d15-87d1-77569e0fc274",
+          "width": 104,
+          "x": 722,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "5c9881e9-3d35-41fb-a7a1-e99df13b243e",
+          "width": 104,
+          "x": 619,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "d1d75590-93d7-4c62-894e-f733c10bf78a",
+          "width": 104,
+          "x": 500,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "8cc05dd2-eb2a-43fb-96d5-1c24153e36a5",
+          "width": 104,
+          "x": 471,
+          "y": 517,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "64e8beaf-753b-4df8-8bdf-c6b04ecc0e55",
+          "width": 104,
+          "x": 285,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "17b6427d-dee4-462f-af6b-fba866448ee3",
+          "width": 104,
+          "x": 179,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "10329429-0cda-4858-95b0-85540e53b35f",
+          "width": 104,
+          "x": 69,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "91ed4e4d-174e-4664-8e70-7d4fd309ca09",
+          "width": 104,
+          "x": -42,
+          "y": 544,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "1f08882b-bbe4-4058-ac00-0505d20c06a2",
+          "width": 104,
+          "x": -137,
+          "y": 552,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "f6ee1a95-6534-4d60-8c6b-0eeb1ef8a3c9",
+          "width": 104,
+          "x": 1766,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "72d8fc26-c1eb-4a79-8721-369614a0151a",
+          "width": 104,
+          "x": 1655,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "cec496a9-7c42-4165-969e-ae47ce71d9c7",
+          "width": 104,
+          "x": 1539,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "0e25bcbe-88b5-4594-8066-164b380f2216",
+          "width": 104,
+          "x": 1423,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "6ea4fa64-b584-4c13-a6e4-d0854a76e301",
+          "width": 104,
+          "x": 1317,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "c1560b2b-8dd0-41a7-9f60-4ad08be5b00e",
+          "width": 104,
+          "x": 1217,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "e3408131-ddfd-4edb-9b68-0a98f8585639",
+          "width": 104,
+          "x": 1102,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "7af21e41-dfe1-436c-8ab4-c32805efe0b0",
+          "width": 104,
+          "x": 986,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "014ec113-3e94-4232-9ee8-bf06d70d6532",
+          "width": 104,
+          "x": 883,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "01dbee37-7eda-492b-bfec-bb88677c2155",
+          "width": 104,
+          "x": 778,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "ae8cb04d-eb42-4179-90f5-1d8231902671",
+          "width": 104,
+          "x": 675,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "a551948a-fc47-460e-b20a-1f2202498572",
+          "width": 104,
+          "x": 556,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "5b2fb2f4-b49d-43e4-80f6-b8cf4c5df931",
+          "width": 104,
+          "x": 453,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "b174f66d-62f7-49aa-aab3-1074f7d9db3b",
+          "width": 104,
+          "x": 341,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "07328dd3-e9f8-42a6-a527-648bf32a788e",
+          "width": 104,
+          "x": 235,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "b3d602b3-f726-485c-b4ec-8cc2ffd75b3c",
+          "width": 104,
+          "x": 125,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "b394fe16-c121-46b7-aa64-864aa8bf460d",
+          "width": 104,
+          "x": 17,
+          "y": 538,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 104,
+          "layer": "",
+          "name": "Asteroid",
+          "persistentUuid": "fdea2eb5-5572-48c9-82f1-2415b94c9f28",
+          "width": 104,
+          "x": 396,
+          "y": 546,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "d89c6f15-753e-485f-9f21-b139635eba60",
+          "width": 107,
+          "x": 1085,
+          "y": 643,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "690bb95b-ec29-45bc-b1f4-ad27919e75cc",
+          "width": 107,
+          "x": 837,
+          "y": 643,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "366f2c28-e79f-46bc-ac75-543d2b8e32ff",
+          "width": 107,
+          "x": 575,
+          "y": 640,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "fa3c8e1f-2fb9-4df5-b9c1-318a5fcab86b",
+          "width": 0,
+          "x": 1330,
+          "y": 631,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ReverseObstacle",
+          "persistentUuid": "046ceb34-230c-4df9-aed2-1cf61d9ce76d",
+          "width": 0,
+          "x": 1621,
+          "y": 644,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
