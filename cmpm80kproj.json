@@ -407,6 +407,15 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dock.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Dock.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -802,7 +811,7 @@
           "folded": true,
           "name": "MoveSize",
           "type": "number",
-          "value": 104
+          "value": 107
         },
         {
           "name": "SpawnPosition",
@@ -4631,7 +4640,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.30204193749944336,
+        "zoomFactor": 0.3685408158997015,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4918,11 +4927,11 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 104,
+          "height": 107,
           "layer": "",
           "name": "Obstacle",
           "persistentUuid": "623b7197-082b-4844-9e4d-55593ae06f89",
-          "width": 104,
+          "width": 107,
           "x": 1648,
           "y": 788,
           "zOrder": 3,
@@ -4966,11 +4975,11 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 104,
+          "height": 107,
           "layer": "",
           "name": "Obstacle",
           "persistentUuid": "51775809-8bf8-4c73-ae53-364f94380980",
-          "width": 104,
+          "width": 107,
           "x": 1211,
           "y": 788,
           "zOrder": 3,
@@ -6692,14 +6701,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
           "layer": "",
           "name": "ReverseObstacle",
           "persistentUuid": "fa3c8e1f-2fb9-4df5-b9c1-318a5fcab86b",
-          "width": 0,
-          "x": 1330,
-          "y": 631,
+          "width": 107,
+          "x": 1333,
+          "y": 643,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -6707,14 +6717,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
           "layer": "",
           "name": "ReverseObstacle",
           "persistentUuid": "046ceb34-230c-4df9-aed2-1cf61d9ce76d",
-          "width": 0,
+          "width": 107,
           "x": 1621,
-          "y": 644,
+          "y": 643,
           "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
@@ -7074,7 +7085,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Dock",
           "type": "Sprite",
@@ -7094,7 +7105,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite7",
+                      "image": "assets/Dock.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
