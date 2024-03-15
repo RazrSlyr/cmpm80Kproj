@@ -53,7 +53,9 @@
     "authorIds": [],
     "authorUsernames": [],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -795,6 +797,17 @@
           "name": "NumDocked",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "TotalDocks",
+          "type": "string",
+          "value": "4"
+        },
+        {
+          "name": "NextLevel",
+          "type": "string",
+          "value": "Finish"
         }
       ],
       "instances": [
@@ -4369,7 +4382,7 @@
               "parameters": [
                 "NumDocked",
                 "=",
-                "4"
+                "TotalDocks"
               ]
             }
           ],
@@ -4380,7 +4393,7 @@
               },
               "parameters": [
                 "",
-                "\"Finish\"",
+                "VariableString(NextLevel)",
                 ""
               ]
             }
