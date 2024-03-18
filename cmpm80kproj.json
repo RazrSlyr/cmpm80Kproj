@@ -416,6 +416,33 @@
         "name": "assets/Dock.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Black.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets/Black.png2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Black.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets/Black.png3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Black.png4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets/Black.png4",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -773,7 +800,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.30204193749944336,
+        "zoomFactor": 0.35651888153452127,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3036,7 +3063,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "Space",
-          "texture": "assets/Black.png",
+          "texture": "assets/Black.png4",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 128,
           "variables": [],
@@ -6919,7 +6946,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "Space",
-          "texture": "assets/Black.png",
+          "texture": "assets/Black.png4",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 128,
           "variables": [],
